@@ -178,7 +178,7 @@ def main():
     if opt.train_dcnn_model or opt.test_dcnn_model:
         print('Loading the dataset ...')
         dataset_load_start = timer()
-        train_x, val_x, test_x, train_y, val_y, test_y, word_to_ix, ix_to_word = load_data('../dataset')
+        train_x, val_x, test_x, train_y, val_y, test_y, word_to_ix, ix_to_word = load_data('dataset')
 
         opt.n_words = len(ix_to_word)
         dataset_load_end = timer()

@@ -29,7 +29,7 @@ class kerasOptions(object):
         self.padding = 'valid'
         self.activation = 'relu'
 
-        self.glove_path = os.path.join('../models/', 'glove.6B.100d.txt')
+        self.glove_path = os.path.join('dataset', 'glove.6B.100d.txt')
         self.embedding_save_path = 'word_emb.pkl'
         self.tbpath = 'graph'
 
@@ -41,7 +41,7 @@ class kerasOptions(object):
         self.restore_cnn_model = True
 
         # DCNN
-        self.train_dcnn_model = False
+        self.train_dcnn_model = True
         self.test_dcnn_model = True
         self.use_cnn_emb_weights = False
         self.dcnn_op_dim = 1
@@ -53,7 +53,7 @@ class kerasOptions(object):
 
         # Transfer
         self.train_transfer_model = True
-        self.dataset_path = os.path.join('..', 'dataset', 'tweets_annotated.csv')
+        self.dataset_path = os.path.join('dataset', 'tweets_annotated.csv')
         self.total_transfer_train_x = None
         self.transfer_n_words = None
         self.transfer_learn_epochs = 3
@@ -64,8 +64,8 @@ class kerasOptions(object):
 
         #Real data
         self.test_real_data = False
-        self.real_dataset_path = os.path.join('..', 'dataset', 'ancestry.csv')
-        self.cleaned_tweet_save_path = os.path.join('..', 'dataset', 'cleaned.csv')
+        self.real_dataset_path = os.path.join('dataset', 'ancestry.csv')
+        self.cleaned_tweet_save_path = os.path.join('dataset', 'cleaned.csv')
 
         # Baseline
         self.train_baseline = False
