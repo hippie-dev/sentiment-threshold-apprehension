@@ -1,0 +1,1 @@
+This folder contains all the Tensorboard graph files. Due to the massive size of the graph files ~20Gb, it has not beenuploaded. However, it can be provided on special request. 

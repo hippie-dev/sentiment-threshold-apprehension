@@ -1,0 +1,1 @@
+This folder contains all the trained models. You can download the experimented models from this Google Drive Link: 
