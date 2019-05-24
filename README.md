@@ -10,6 +10,7 @@ To run the project:
 - Cd into the project directory and install the requirements using the command: 
 - `pip install -r requirements.txt`
 - To run the project run the file `main.py` using command: `python main.py`
+- To change any configuration, use `keras_config.py` file.
 
 The project is dependent on Glove Word vector Embedding (100d) which can be downloaded from [Here](https://nlp.stanford.edu/projects/glove/)
 
