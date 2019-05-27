@@ -6,8 +6,8 @@ import re
 from bs4 import BeautifulSoup
 from nltk import TweetTokenizer
 
-from keras.k_utils import create_glove_embeddings, word_embedding_lookup
-from utils import pad_data_for_cnn
+from k_utils import create_glove_embeddings, word_embedding_lookup
+from k_utils import pad_data_for_cnn
 
 
 def read_tweet_csv_file(opt, remove_quotes=True):

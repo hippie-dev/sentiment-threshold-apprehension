@@ -10,8 +10,8 @@ from tensorflow.python.keras.models import load_model, Model
 from tensorflow.python.keras import backend as K
 from sklearn.model_selection import train_test_split
 
-from keras.k_utils import pad_data_for_cnn, create_glove_embeddings
-from keras.seq_generator import My_Generator
+from k_utils import pad_data_for_cnn, create_glove_embeddings
+from seq_generator import My_Generator
 from timeit import default_timer as timer
 
 

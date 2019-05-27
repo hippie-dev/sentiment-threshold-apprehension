@@ -9,22 +9,22 @@ from tensorflow.python.keras.engine.training import Model
 from tensorflow.python.keras.layers import Dense
 from tensorflow.python.keras.models import load_model
 
-from keras.CustomCallBacks import WeightCallback
-from keras.cnn_dcnn_model import CNN_DCNN
-from keras.cnn_model import CNN
-from keras.k_utils import load_data, create_glove_embeddings, word_embedding_lookup
-from keras.keras_config import kerasOptions
+from CustomCallBacks import WeightCallback
+from cnn_dcnn_model import CNN_DCNN
+from cnn_model import CNN
+from k_utils import load_data, create_glove_embeddings, word_embedding_lookup
+from keras_config import kerasOptions
 
 from tqdm import tqdm
 import pandas as pd
-from keras.k_utils import pad_data_for_cnn
+from k_utils import pad_data_for_cnn
 from timeit import default_timer as timer
 
-from keras.real_data import get_data, prepare_real_data
-from keras.seq_generator import My_Generator
+from real_data import get_data, prepare_real_data
+from seq_generator import My_Generator
 import h5py
 from time import time
-from keras.transfer_model import TransferModel
+from transfer_model import TransferModel
 
 
 def train_cnn_model(emb_layer, x_train, y_train, x_val, y_val, opt):
